@@ -1,5 +1,3 @@
-# source ~/Documents/code/venv/venv/bin/activate
-# python test.py
 import numpy as np
 import matplotlib.pyplot as plt
 
