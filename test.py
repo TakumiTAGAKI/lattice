@@ -19,7 +19,7 @@ def random_xy(pixel):
 
     else:
         print('Error: random_xy')
-        return '', ''
+        return ''
 
     # くっつける　片方シャッフルして[0, 1] × [0, 1] 内にばら撒く
     x = np.hstack([x1, x2])
@@ -43,7 +43,7 @@ def r_cos(x, y):
 
     else:
         print('Error: r_cos')
-        return '', '', ''
+        return ''
 
 
 # 軸周りの共通設定
