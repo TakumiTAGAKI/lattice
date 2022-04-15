@@ -57,7 +57,7 @@ def plot_settings(ax, aspect):
 
     # 左の枠をずらす
     ax[0][0].spines['left'].set_position(('outward', 5))
-    # 軸のメモリ線とメモリラベルを消す
+    # 下の軸、目盛り線、目盛りラベルを消す
     ax[0][0].tick_params(labelbottom=False, bottom=False)
     ax[0][0].spines['bottom'].set_visible(False)
 
