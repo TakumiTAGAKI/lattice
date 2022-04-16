@@ -81,8 +81,8 @@ def plot_xy(x_i, y_i, len_i, x_f, y_f, len_f):
         2, 4, gridspec_kw={'width_ratios': (1, 0.05, 1, 0.05)})
 
     # グラフたち
-    ax[0][0].scatter(x_i, y_i, s=0.5)
-    ax[0][2].scatter(x_f, y_f, s=0.5)
+    ax[0][0].scatter(x_i, y_i, s=0.1)
+    ax[0][2].scatter(x_f, y_f, s=0.1)
     im_i = ax[1][0].hist2d(x_i, y_i, cmap='Blues', bins=30)
     im_f = ax[1][2].hist2d(x_f, y_f, cmap='Blues', bins=30)
 
@@ -111,7 +111,7 @@ def plot_xy(x_i, y_i, len_i, x_f, y_f, len_f):
 
     # subplot間隔調整
     plt.subplots_adjust(wspace=0, hspace=0.3)
-    plt.savefig('xy.png', dpi=200)
+    plt.savefig('xy.png', dpi=400)
     # plt.show()
 
 
@@ -121,8 +121,8 @@ def plot_r_cos(r_i, cos_i, len_i, r_f, cos_f, len_f):
         2, 4, gridspec_kw={'width_ratios': (1, 0.05, 1, 0.05)})
 
     # グラフたち
-    ax[0][0].scatter(cos_i, r_i, s=0.5)
-    ax[0][2].scatter(cos_f, r_f, s=0.5)
+    ax[0][0].scatter(cos_i, r_i, s=0.1)
+    ax[0][2].scatter(cos_f, r_f, s=0.1)
     im_i = ax[1][0].hist2d(cos_i, r_i, cmap='Blues', bins=15)
     im_f = ax[1][2].hist2d(cos_f, r_f, cmap='Blues', bins=15)
 
@@ -149,7 +149,7 @@ def plot_r_cos(r_i, cos_i, len_i, r_f, cos_f, len_f):
     plot_settings(ax, aspect=2)
 
     plt.subplots_adjust(wspace=0, hspace=0.3)
-    plt.savefig('r_cos.png', dpi=200)
+    plt.savefig('r_cos.png', dpi=400)
     # plt.show()
 
 
